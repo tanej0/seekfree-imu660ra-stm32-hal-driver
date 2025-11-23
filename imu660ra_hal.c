@@ -63,7 +63,7 @@ static uint8_t IMU660RA_Write_Reg(IMU660RA_t *dev, uint8_t reg, uint8_t data) {
  * @param reg 寄存器地址
  * @return 读取到的寄存器数据
  */
-static uint8_t IMU660RA_Read_Reg(I MU660RA_t *dev, uint8_t reg) {
+static uint8_t IMU660RA_Read_Reg(IMU660RA_t *dev, uint8_t reg) {
     uint8_t tx_data = reg | SPI_READ_MASK;
     uint8_t rx_data[2] = {0};
 
